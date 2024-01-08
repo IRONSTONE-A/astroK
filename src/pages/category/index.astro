@@ -1,0 +1,299 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import Filters from "../../assets/categoryPage/filters/891530-200.png"
+
+
+
+import mamA1 from "../../assets/categoryPage/products/mamA1.png.webp"
+import mamA4 from "../../assets/categoryPage/products/mamA4.png.webp"
+import mamA5 from "../../assets/categoryPage/products/mamA5.png.webp"
+import mamB2 from "../../assets/categoryPage/products/MAMB2.png.webp"
+import mamB2N from "../../assets/categoryPage/products/MAMB2N.png.webp"
+import mamB3 from "../../assets/categoryPage/products/MAMB3.png.webp"
+import mamB3N from "../../assets/categoryPage/products/MAMB3N.png.webp"
+import mamB4 from "../../assets/categoryPage/products/MAMB4.png.webp"
+import mamGT1 from "../../assets/categoryPage/products/MAMGT1.png.webp"
+import mamOX18 from "../../assets/categoryPage/products/MAMOX-18.png.webp"
+import mamRS3 from "../../assets/categoryPage/products/MAMRS3.png.webp"
+import mamRS4 from "../../assets/categoryPage/products/MAMRS4png.webp"
+import mamRS5 from "../../assets/categoryPage/products/MAMRS5.png.webp"
+import mamW4 from "../../assets/categoryPage/products/MAMW4.png.webp"
+import mamRS6 from "../../assets/categoryPage/products/MAMRS6.png.webp"
+
+import  dataJson from "../../helpers/keskin_kt10_product_info.json"
+
+const data = dataJson
+console.log(data)
+---
+
+
+
+<Layout title="MamFelgen Astro">
+    <section class="category-title">
+        <h2><a href="./index.html">Startseite</a> / <span>Alufelgen</span></h2>
+      </section>
+     
+      <!-- ************************ category title finish ***************************** -->
+      <main class="category-card-wrapper">
+        <div class="category-card-filter-container">
+          <div class="category-card-filter">
+              <div><span>Show:</span> 9 / 12 / 18 / 24</div>
+              <div> 
+                  <i class="bi bi-grid"></i>
+                  <i class="bi bi-grid-3x3-gap"></i>
+                  <img
+                    src={Filters.src}
+                    alt=""
+                    width="15px"
+                  />
+              </div>
+              <div>
+                  <i class="bi bi-sliders"></i> Filter
+              </div>
+              
+         
+          
+          </div>
+          
+        </div>
+       
+         
+          <div class="category-card-container">
+            <a href="/product">
+              <div class="category-card">
+              
+                <img src={mamA1.src} alt="" />
+                <h3>model</h3>
+                <h4>171.50€<span>-</span>205.00€</h4>
+          
+                </div>
+                </a>
+        
+         
+        
+        
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamA4.src} alt="" />
+            <h3>MAM A4</h3>
+            <h4>92.93€ <span>-</span>190.54€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamA5.src} alt="" />
+            <h3>MAM A5</h3>
+            <h4>143.38€<span>-</span>211.43€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamB2.src} alt="" />
+            <h3>MAM B2</h3>
+            <h4>179.54€<span>-</span>286.93€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamB2N.src} alt="" />
+            <h3>MAM B2N</h3>
+            <h4>213.03€<span>-</span>224.28€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamB3.src} alt="" />
+            <h3>MAM B3</h3>
+            <h4>206.61€<span>-</span> 214.64€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamB3N.src} alt="" />
+            <h3>MAM B3N</h3>
+            <h4>206.61€<span>-</span> 214.64€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamB4.src} alt="" />
+            <h3>MAM B4</h3>
+            <h4>174.48€<span>-</span>182.51€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamGT1.src} alt="" />
+            <h3>MAM GT1</h3>
+            <h4>127.32€<span>-</span>471.68€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamOX18.src} alt="" />
+            <h3>MAM OX-18</h3>
+            <h4>198.58€<span>-</span>203.39€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamRS3.src} alt="" />
+            <h3>MAM RS3</h3>
+            <h4>100.01€<span>-</span>246.77€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamRS4.src} alt="" />
+            <h3>MAM RS4</h3>
+            <h4>138.56€<span>-</span>311.03€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamRS5.src} alt="" />
+            <h3>MAM RS5</h3>
+            <h4>214.64€<span>-</span>219.46€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamW4.src} alt="" />
+            <h3>MAM W4</h3>
+            <h4>90.37€<span>-</span>135.35€</h4>
+          </div>
+      </a>
+          <a href="./product.html">
+          <div class="category-card">
+            <img src={mamRS6.src} alt="" />
+            <h3>MAM RS6</h3>
+            <h4>214.64€<span>-</span>219.46€</h4>
+          </div>
+      </a>
+  
+    </div>
+      </main>
+</Layout>
+
+<style>
+    .category-title{
+    background-color:#000000 ;
+    height: 152px;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+}
+
+
+.category-title h2{
+    color: white;
+}
+.category-title h2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.category-title span{
+    color:#CBFC4E;
+}
+
+
+
+/* category title finish */
+
+.category-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-content: start;
+    gap:10px;
+    width: 1222px;
+    height: 1756px;
+    margin: auto;
+}
+
+.category-card-container>a{
+    text-decoration: none;
+}
+
+.category-card{
+    width: 304px;
+    height: 370px;
+    box-shadow: 0px 0px 4px #f1f1f1;
+    border: .5px solid #f1f1f1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.category-card img{
+    width: 80%;
+    margin: auto;
+}
+
+.category-card h3{
+    color: black;
+}
+
+.category-card h4{
+    color: #787777;
+}
+
+.category-card-filter-container{
+    width: 100%;
+    margin: auto;
+    margin-top:20px;
+    padding: 10px;
+    height: 56px;
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.category-card-filter{
+    display: flex;
+    gap:25px;
+}
+
+
+.category-card-filter span{
+    color:black ;
+    font-weight: 800;
+    
+}
+
+@media only screen and (max-width: 1245px){
+    .category-title{
+        height: 140px;
+        padding-left:20%;
+    } 
+    .category-card-container{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-evenly ;
+        align-content: center;
+        gap:10px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .category-card-container{
+        
+        grid-template-columns: repeat(2, auto);
+    
+    } 
+}
+@media only screen and (max-width: 650px){
+    .category-card-container{
+       
+        grid-template-columns: repeat(1, auto);
+      ;
+    }
+}
+</style>

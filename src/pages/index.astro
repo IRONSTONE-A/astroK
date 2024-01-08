@@ -1,0 +1,817 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Video1 from "../assets/mainPage/videoSlider/video1.mp4"
+import VideoOverText from "../assets/mainPage/videoSlider/vidoe-over-text-image-green.svg"
+
+import CardSectionTitleFoto from "../assets/mainPage/cardSection/card-section-title.svg"
+import CardSectionFoto1 from "../assets/mainPage/cardSection/cardSection1.webp"
+import CardSectionFoto2 from "../assets/mainPage/cardSection/cardSection2.png"
+import CardSectionFoto3 from "../assets/mainPage/cardSection/cardSection3.png"
+
+import BannerFoto1 from "../assets/mainPage/bannerFoto/bannerFoto1.png"
+
+import BannerFoto2 from "../assets/mainPage/bannerFoto/bannerFoto2.webp"
+
+import EmailSection1 from "../assets/mainPage/emailSection/emailSection1.webp"
+import EmailSection2 from "../assets/mainPage/emailSection/emailSection2.webp"
+import EmailSection3 from "../assets/mainPage/emailSection/emailSection3.webp"
+
+
+import InstagramBannerFoto1 from "../assets/mainPage/instagramBanner/instagramBannerFoto1.jpg"
+import InstagramBannerFoto2 from "../assets/mainPage/instagramBanner/instagramBannerFoto2.jpg"
+import InstagramBannerFoto3 from "../assets/mainPage/instagramBanner/instagramBannerFoto3.jpg"
+import InstagramBannerFoto4 from "../assets/mainPage/instagramBanner/instagramBannerFoto4.jpg"
+
+
+
+
+
+
+
+---
+
+<Layout title="MamFelgen Astro">
+	<section class="main-video-section">
+        <video autoplay muted>
+            <source src={Video1} >
+        </video>
+        <div class="main-video-over-text">
+            <img src={VideoOverText.src} alt="">
+            <h6>Brandneue Disagn, Brandneue Style</h6>
+            <div class="main-video-over-text-button">
+                <a href="">Mehr Erfahren  </a>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ************* video slider finish *************************************-->
+    <section class="card-section">
+        <div class="card-section-title">
+            <img src={CardSectionTitleFoto.src} alt="card-section-title" >
+        </div>
+        <div class="card-container">
+            <div class="card card-first">
+                <a href="./product.html">
+                <div class="card-title-container">
+                    <div class="card-title-container-left"></div>
+                    <h2 class="card-title-container-title"> <span>MAM</span> OX-18</h2> 
+                    <div class="card-title-container-desc"><span>Neu</span></div>
+                </div>
+                <p class="card-description">
+                    Das 5- Speichenrad wirkt elegant, dynamisch und passt ideal für eine Vielzahl an Fahrzeugmodellen
+                </p>
+                <img src={CardSectionFoto1.src} alt="">
+                <p class="card-utils">19"</p>
+                <button>Jetzt Kaufen</button>
+                </a>
+                
+            </div>
+            <div class="card card-second">
+                <a href="./product.html">
+                <div class="card-title-container">
+                    <div class="card-title-container-left"></div>
+                    <h2 class="card-title-container-title"><span>MAM</span> RS4</h2> 
+                    <div class="card-title-container-desc"> <span>Top</span> </div>
+                </div>
+                <p class="card-description">
+                    Die facettenreiche und atemberaubende Optik wirken sportlich und perfekt für alle Design-Liebhaber
+                </p>
+                <img src={CardSectionFoto2.src} alt="">
+                <p class="card-utils">17" 18" 19"</p>
+                <button>Jetzt Kaufen</button>
+                </a>
+                
+            </div>
+            <div class="card card-third">
+                <a href="./product.html">
+            
+                <div class="card-title-container">
+                    <div class="card-title-container-left"></div>
+                    <h2 class="card-title-container-title"><span>MAM</span> B3N</h2> 
+                    <div class="card-title-container-desc"><span>Neu</span></div>
+                </div>
+                <p class="card-description">
+                    Das sportliche Design der Speichen erzeugt eine spannende Optik
+                </p>
+                <img src={CardSectionFoto3.src} alt="">
+                <p class="card-utils">17" 18" 19"</p>
+                <button>Jetzt Kaufen</button>
+                </a>
+                
+            </div>
+        </div>
+
+        
+
+    </section>
+     <!-- ************* card section finish *************************************-->
+
+     <section class="banner-alle-felgen">
+        <a href="./category.html">
+            <img class="banner-alle-felgen-img" src={BannerFoto1.src} alt="">
+            <div class="banner-alle-felgen-text">
+                <h2>Alle <span>Felgen</span></h2>
+                <p>Schauen Sie durch unsure Productgalerie oder cerwenden Sie den Filter um Ihre Lieblingsfelge zu finden.</p>
+            </div>
+        </a>
+     </section>
+
+      <!-- ************* banner-alle-felgen finish ********************************-->
+
+      <section class="email-wrapper">
+        
+        <div class="email-cards-container">
+            <div class="email-input-container">
+                <h2 class="email-input-container-title">Newsletter</h2>
+                <p class="email-input-container-desc">Meiden Sie sich an, um als Erster von unseren Rabatten, neuen Produkten, Aktionen und mehr zu erfahren</p>
+                <form action="">
+                    <input type="text" placeholder="E-Mail">
+                    <button>SENDEN</button>
+                </form>
+            </div>
+        <div class="email-card-first email-card">
+            <a href="">
+            <img src={EmailSection1.src} alt="">
+            <div>
+            <h3>Die Kunst der Pflege</h3>
+            <p>So schützen Sie Ihre Felgen im Winter! Felgen sind nicht nur ein optischer Höhepunkt, sondern auch ein wichtigerBestandteil der Sicherh...</p>
+            </div>
+            </a>
+        </div>
+        <div class="email-card-second email-card">
+            <a href="">
+            <img src={EmailSection2.src} alt="">
+            <div>
+            <h3>Sind alle Alufelgen für den Winter geeignet?</h3>
+            <p>
+                Von Materialbeschichtung bis wintertauglichen Legierungen: Alles, was Sie wissen müssenWinterreifen sind ein Muss für jeden Autofahrer,...</p>
+            </div>
+            </a>
+        </div>
+        <div class="email-card-third email-card">
+            <a href="">
+            <img src={EmailSection3.src} alt="">
+            <div>
+            <h3>Was ist besser?</h3>
+            <p>
+                
+                Wenn Sie neue Reifen für Ihr Auto kaufen, müssen Sie sich auch für einen Felgentyp entscheiden: Aluminium- oder Stahlf...</p>
+            </div>
+            </a>
+        </div>
+    </div>
+      </section>
+      <!-- ************* email-input-section finish ********************************-->
+
+      <section class="banner-personality">
+        <a href="https://www.instagram.com/mamfelgen/">
+            <img class="banner-personality-img" src={BannerFoto2.src} alt="">
+            <div class="banner-personality-text">
+                <h2>Your ride, your personality!</h2>
+                <a class="banner-personality-text-link" href="https://www.instagram.com/mamfelgen/"> FOLGEN SIE UNS AUF INSTAGRAM!</a>
+            </div>
+        </a>
+     </section>
+
+
+     <!-- ************* banner-personality finish ********************************-->
+
+     <section class="banner-instagram">
+        <div class="banner-instagram-foto-container">
+            <a href="https://www.instagram.com/p/C1AFQM9ynMX/"><img src={InstagramBannerFoto1.src} alt=""></a>
+            
+        </div>
+        <div class="banner-instagram-foto-container">
+            <a href="https://www.instagram.com/reel/C04lZgsNAwp/"><img src={InstagramBannerFoto2.src} alt=""></a>
+            
+        </div>
+        <div class="banner-instagram-foto-container">
+            <a href="https://www.instagram.com/p/C0uDmGCNpyD/"><img src={InstagramBannerFoto3.src} alt=""></a>
+            
+        </div>
+        <div class="banner-instagram-foto-container">
+            <a href="https://www.instagram.com/reel/C0jsHD6tkIF/"><img src={InstagramBannerFoto4.src} alt=""></a>
+            
+        </div>
+        <!-- <div class="banner-instagram-foto-container">
+            <a href="https://www.instagram.com/p/C0b-tnitjlg/"><img src="./assets/mainPage/instagramBanner/instagramBannerFoto5.jpg" alt=""></a>
+            
+        </div> -->
+        
+        
+     </section>
+
+       <!-- ************* banner-instagram finish ********************************-->
+
+       
+</Layout>
+
+
+<style>
+	.main-video-section{
+    position: relative;
+    z-index: -1;
+   
+}
+
+.main-video-section video{
+    width: 100%;
+}
+
+.main-video-over-text{
+    position: absolute;
+    top:240px;
+    left:150px;
+    display: flex;
+    flex-direction: column;
+    gap:30px
+}
+
+.main-video-over-text img{
+    width: 80%;
+}
+
+.main-video-over-text h6{
+    color:white;
+    font-size: 1.3rem;
+
+}
+
+
+
+.main-video-over-text .main-video-over-text-button{
+    display: flex;
+    width: 175px;
+    padding: 10px;
+    background-color: #CBFC4E;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: #545454;
+    text-decoration: none;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.main-video-over-text a{
+    color: #545454;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1245px){
+    .main-video-over-text{
+        position: absolute;
+        top:50px;
+        left:40px;
+        }
+}
+@media only screen and (max-width: 720px){
+    .main-video-over-text{
+    position: absolute;
+    top:20px;
+    left:20px;
+    }
+    .main-video-over-text img{
+        width: 50%;
+    }
+    
+    .main-video-over-text h6{
+        color:white;
+        font-size: .7rem;
+        width: 120px;
+    
+    }
+
+    .main-video-over-text .main-video-over-text-button{
+        width: 135px;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+        font-size: .7rem;
+    }
+    
+}
+@media only screen and (max-width: 560px){
+   .main-video-over-text{
+    display: none;
+   } 
+}
+
+
+/* main-video-section finish */
+
+.card-section{
+    margin-bottom:100px;
+}
+
+.card-section-title{
+    text-align: center;
+    padding: 15px;
+    /* margin-bottom: 50px; */
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+
+.card>a{
+    width: 414px;
+    height: 612px;
+    border: 2px solid #262626 ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F5F9;
+    text-decoration: none;
+    
+}
+
+.card img{
+    width: 70%;
+    margin:auto;
+    transition: .5s all;
+}
+
+.card img:hover{
+    transform: rotate(360deg);
+}
+
+.card-description{
+    padding: 0px 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color:#545454
+
+}
+
+.card-title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+.card-title-container-title{
+    color:#262626;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.card-title-container-title span{
+    font-weight: bolder;
+    color:black;
+    
+    
+}
+
+.card-title-container-desc{
+    width: 60px;
+    height: 70px;
+    background-color: #CBFC4E;
+    border-top-right-radius: 15px;
+    top: 100%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+   
+}
+
+.card-title-container-desc span{
+    
+    transform: rotate(45deg);
+  
+}
+
+.card-utils{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    color:#262626;
+}
+
+.card button{
+    width: 200px;
+    margin:auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0f0f0f;
+    color:white;
+
+}
+
+
+@media only screen and (max-width: 1245px){
+    .card-third{
+        display: none;
+    }
+}
+@media only screen and (max-width: 880px){
+
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+            
+    
+    
+}
+@media only screen and (max-width: 720px){
+    .card-section-title img{
+        width: 70%;
+    }
+}
+
+
+/* card section finish */
+
+
+
+.banner-alle-felgen {
+    position: relative;
+    
+}
+
+.banner-alle-felgen-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-alle-felgen-text {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#545454
+}
+
+.banner-alle-felgen-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.banner-alle-felgen-text p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px){
+    .banner-alle-felgen-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .banner-alle-felgen-text p {
+        font-size: .8rem;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .banner-alle-felgen-text h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .banner-alle-felgen-text p {
+        font-size: .6rem;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 560px){
+    .banner-alle-felgen-text h2 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    
+    .banner-alle-felgen-text p {
+        font-size: .5rem;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 450px){
+    .banner-alle-felgen-text h2 {
+        font-size: .9rem;
+        margin-bottom: 5px;
+    }
+    
+    .banner-alle-felgen-text p {
+        font-size: .4rem;
+        margin: 0;
+    }
+}
+
+
+
+
+/* banner-alle-felgen finish  */
+
+.email-wrapper{
+    /* height: 478px; */
+    width: 90%;
+    display: flex;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.email-input-container{
+    height: 300px;
+    width: 260px;
+    padding: 70px 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:15px;
+    padding:0px 20px;
+    text-align: justify;
+}
+
+.email-input-container-title{
+    font-size: 2rem;
+}
+
+.email-input-container-desc{
+    font-size: 1.1rem;
+}
+
+.email-input-container form input{
+    padding: 10px 10px;
+    
+    width: 100%
+}
+.email-input-container form button{
+    display: block;
+    padding: 10px 10px;
+    background-color: #0f0f0f;
+    color:white;
+    cursor: pointer;
+    width: 100% !important;
+    
+}
+
+.email-input-container form button:hover{
+    background-color: #262626;
+}
+
+.email-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px;
+}
+
+.email-card{
+    height: 300px;
+    width: 260px;
+    border-radius: 20px;
+    position:relative
+}
+
+.email-card img{
+    object-fit: cover;
+    height: 300px;
+    width: 260px;
+    border-radius: 20px;
+    filter: brightness(0.50);
+    opacity: 0.8;
+    transition: .4s opacity;
+}
+
+.email-card img:hover{
+    opacity: 1;
+}
+
+.email-card div{
+    position:absolute;
+    bottom:50px;
+    text-align: center;
+    color:white;
+    font-size: .8rem;
+
+}
+
+@media only screen and (max-width: 1205px){
+   
+    .email-input-container{
+        order:1
+    }
+
+    /* .email-wrapper{
+        
+        margin-top:90px;
+        margin-bottom:90px;
+      
+        
+    } */
+}
+@media only screen and (max-width: 595px){
+/* 
+    .email-wrapper{
+        
+        margin-top:390px;
+        margin-bottom:390px;
+      
+        
+    } */
+   
+    .email-card div{
+        position:absolute;
+        top:30px;
+        text-align: center;
+        color:white;
+        font-size: .8rem;
+    
+    }
+
+    .email-card div p{
+        line-height: 2rem;
+        /* text-align: justify; */
+        padding: 0px 5px;
+    }
+    .email-input-container-title{
+        font-size: 1.7rem;
+    }
+    
+    .email-input-container-desc{
+        font-size: .9rem;
+    }
+}
+
+
+/* email-input-section finish */
+
+
+.banner-personality {
+    position: relative;
+  }
+
+  .banner-personality a:nth-child(1){
+    text-decoration: none;
+}
+  
+  .banner-personality-img {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .banner-personality-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #0f0f0f; 
+  }
+  
+  .banner-personality-text h2 {
+    font-size: 24px;
+    color:#0f0f0f 
+  }
+  
+  .banner-personality-text-link {
+    display: block;
+    /* margin-top: 10px; */
+    font-size: 16px;
+    text-decoration: none;
+    background-color: transparent;
+    width: 33vw;
+    padding:10px ; 
+    border: 1px solid;
+    color: #0f0f0f;
+    transition: .4s all;
+    font-size: .9rem;
+    border-radius: 10px;
+  }
+  
+
+.banner-personality-text-link:hover{
+    background-color: #0f0f0f;
+    color:white;
+
+}
+
+@media only screen and (max-width: 1100px){
+    .banner-personality-text {
+        top:15%
+    }
+}
+@media only screen and (max-width: 1000px){
+    .banner-personality-text h2{
+        font-size: 18px;
+        padding: 7px;
+
+    }
+    .banner-personality-text-link{
+        /* margin-top:5px; */
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .banner-personality-text-link{
+        margin-top:5px;
+        font-size: .6rem;
+        padding: 5px;
+    }
+
+    .banner-personality-text h2{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 565px){
+    .banner-personality-text-link{
+        font-size: .4rem;
+        margin-top:-7px;
+    }
+
+    .banner-personality-text h2{
+        font-size: 9px;
+    }
+}
+
+  
+
+/* banner-personality finish */
+
+.banner-instagram{
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner-instagram-foto-container{
+    width: 25%;
+    height: 304px;
+    
+}
+
+.banner-instagram-foto-container img{
+    width: 100%;
+    height: 304px;
+}
+
+@media only screen and (max-width: 910px){
+    .banner-instagram-foto-container{
+        /* width: 20%; */
+        height: 250px;
+    }
+    
+    .banner-instagram-foto-container img{
+       
+        height: 250px;
+    }
+}
+ @media only screen and (max-width: 720px){
+  
+    .banner-instagram-foto-container{
+        /* width: 20%; */
+        height: 200px;
+    }
+    
+    .banner-instagram-foto-container img{
+       
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 620px){
+    .banner-instagram-foto-container{
+        /* width: 20%; */
+        height: 150px;
+    }
+    
+    .banner-instagram-foto-container img{
+        width: 100%;
+        height: 150px;
+    }
+} 
+@media only screen and (max-width: 520px){
+    .banner-instagram-foto-container{
+        /* width: 20%; */
+        height: 100px;
+    }
+    
+    .banner-instagram-foto-container img{
+        width: 100%;
+        height: 100px;
+    }
+} 
+
+/* banner-instagram finish */
+</style>
+
+

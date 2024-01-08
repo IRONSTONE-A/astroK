@@ -1,0 +1,240 @@
+---
+import MamLogo from "../assets/mainPage/footer/MAM_Logo_Footer.png.webp"
+import BerlinTiresLogo from "../assets/mainPage/footer/Berlin-Tires-Logo-White.png"
+import KeskinLogo from "../assets/mainPage/footer/Keskin-Logo-White.png"
+import SyronLogo from "../assets/mainPage/footer/Syron-Logo-White.png"
+
+import InstagramLogo from "../assets/mainPage/footer/instagram_footer.svg"
+import YoutubeLogo from "../assets/mainPage/footer/youtube_footer.svg"
+import FacebookLogo from "../assets/mainPage/footer/facebook_footer.svg"
+import TiktokLogo from "../assets/mainPage/footer/tiktok-white.svg"
+import TwitterLogo from "../assets/mainPage/footer/white-Twitter-X.svg"
+
+---
+<section class="footer">
+    <div class="footer-top">
+        <div class="footer-top-first ">
+            <div class="mam-link">
+                <a href="https://mamfelgen.de/"><img src={MamLogo.src} alt=""></a>
+            </div>
+            <div class="footer-top-other-company">
+                <a href="https://berlintires.de/"><img src={BerlinTiresLogo.src} alt=""></a>
+                <a href="https://keskinfelgen.de/"><img src={KeskinLogo.src} alt=""></a>
+                <a href="https://syron.de/"><img src={SyronLogo.src} alt=""></a>
+            </div>
+        </div>
+        <div class="footer-top-second ">
+               <h2>Unternehmen</h2> 
+               <h4><a href="">Über uns</a></h4>
+               <h4><a href="">Gutachten</a></h4>
+               <h4><a href="">Kontakt</a></h4>
+               <h2 class="footer-top-second-title" >Rechtliches</h2> 
+               <h4><a href="">Impressum</a></h4>
+               <h4><a href="">Datenschutz</a></h4>
+               <h4><a href="">AGB</a></h4>
+               <h4><a href="">Rechtliche Hinweise</a></h4>
+        </div>
+
+        <div class="footer-top-third">
+            <h2>Service & Kontakt</h2>
+
+            <h4 class="service-type">Service - Fachhändler</h4>
+
+            <h4>Tel: +49 (0) 30 – 62 93 80 220</h4>
+            <h4>E-Mail:<a href="mailto:info@berlintires.com">info@berlintires.com</a></h4>
+            <h4>Mo-Fr: 08:00-12:00 & 13:00-17:00</h4>
+
+            <h4 class="service-type">Service – Endverbraucher</h4>
+
+            <h4>Tel: +49 (0) 30 – 62 93 80 222</h4>
+            <h4>E-Mail:<a href="mailto:info@berlintires.com">endverbraucher@berlintires.com</a></h4>
+            <h4>Mo-Fr: 08:00-12:00 & 13:00-17:00</h4>
+            
+            <h4 class="service-type">EMEA / Nordamerika / Export</h4>
+            <h4>Tel: +49 (0) 30 – 62 93 80 260</h4>
+            <h4>E-Mail:<a href="mailto:export@berlintires.com">export@berlintires.com</a></h4>
+     </div>
+     <div class="footer-top-fourth">
+        <h2>Sozialen Medien</h2> 
+        <a href="https://www.instagram.com/mamfelgen/"><img src={InstagramLogo.src} alt=""></a>
+        <a href="https://www.youtube.com/@mamalloywheels2970"><img src={YoutubeLogo.src} alt=""></a>
+        <a href="https://www.facebook.com/mamfelgen"><img src={FacebookLogo.src} alt=""></a>
+        <a href="https://www.tiktok.com/@mamfelgen"><img src={TiktokLogo.src} alt=""></a>
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FMAMFelgen"><img src={TwitterLogo.src} alt="" width="24px"></a>
+        <h2 class="footer-top-fourth-title" >Händler</h2> 
+        <h4><a href="">Händler Login</a></h4>
+        <h4><a href="">Registrierung Fachhändler</a></h4>
+        <h4><a href="">Händlersuche</a></h4>
+        
+        <h2 class="footer-top-fourth-title-non" >Felgenkollektion</h2> 
+ </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <h4> Copyright © 2023 Berlin Tyres Europa GmbH - All Rights Reserved</h4>
+       
+    </div>
+</section>
+
+<!-- ************* footer finish ********************************-->
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: Prompt, Arial, Helvetica, sans-serif;
+    }
+    .footer{
+    background-color: black;
+    color:white;
+}
+.footer-top{
+    width: 80%;
+    height: 420px;
+    margin: auto;
+    display: flex;
+}
+
+.footer-bottom{
+    height: 58px;
+    border-top: 1px solid #787777;
+    line-height: 58px;
+    text-align: center;
+}
+
+.footer-top-first{
+    padding: 35px 20px;
+    width: 25%;
+    
+}
+
+.footer-top-first img{
+    width: 50%;
+}
+
+.footer-top-other-company img{
+    width: 30%;
+}
+
+.footer-top-second{
+    padding:35px 20px;
+    width: 25%;
+    font-size: 0.8rem;
+}
+
+.footer-top-second h2{
+    color:#CBFC4E;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.footer-top-second a{
+    text-decoration: none;
+    color:#545454;
+
+}
+
+.footer-top-second a:hover{
+    color:white;
+}
+
+.footer-top-second-title{
+    margin-top:10px;
+}
+
+.footer-top-third{
+    padding: 35px 20px;
+    width: 25%;
+    color:#545454;
+    font-size: 0.8rem;
+}
+
+.footer-top-third h2{
+    color:#CBFC4E;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.service-type{
+    margin: 10px 0px;
+}
+
+.footer-top-third a{
+    text-decoration: none;
+    color:#545454
+}
+
+.footer-top-third a:hover{
+    color:white;
+}
+
+.footer-top-fourth{
+    padding:35px 20px;
+    width: 25%;
+    font-size: 0.8rem;
+}
+
+.footer-top-fourth h2{
+    color:#CBFC4E;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.footer-top-fourth a{
+    text-decoration: none;
+    color:#545454;
+
+}
+
+.footer-top-fourth-title-non{
+    text-decoration: none !important;
+}
+
+.footer-top-fourth-title{
+    margin-top:10px;
+}
+
+.footer-top-fourth a:hover{
+    color:white;
+}
+.footer-top-fourth img:hover{
+    color:#CBFC4E;
+    
+}
+
+
+@media only screen and (max-width: 1200px){
+    .footer-top{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .footer-top{
+        display:grid;
+        grid-template-columns: auto auto;
+    }
+    .footer-top-first, .footer-top-second,.footer-top-third,.footer-top-fourth{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 720px){
+    .footer-top{
+        display:grid;
+        grid-template-columns: auto;
+    }
+    .footer-top-first, .footer-top-second,.footer-top-third,.footer-top-fourth{
+        width: 100%;
+    }
+    .footer-bottom{
+        font-size: .9rem;
+    }
+}
+@media only screen and (max-width: 620px){
+    .footer-bottom{
+        height: auto;
+    }
+}
+</style>

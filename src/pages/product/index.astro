@@ -1,0 +1,762 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import productBigFoto from "../../assets/productPage/productSection/rs6/MAMRS6big.png.webp"
+import MAMRS6_BFP from "../../assets/productPage/productSection/rs6/MAMRS6_BFP_R30-150x150.png"
+import MAMRS6_BP from "../../assets/productPage/productSection/rs6/MAMRS6_BP_R30-150x150.png"
+import MAMRS6_PFP from "../../assets/productPage/productSection/rs6/MAMRS6_PFP_R30-150x150.png"
+
+
+import videoMAMRS6 from "../../assets/productPage/videoSection/MAMRS6-.mp4"
+
+import MAMRS4small1 from "../../assets/productPage/productSection/rs6/MAMRS4small1.webp"
+import MAMW4small2 from "../../assets/productPage/productSection/rs6/MAMW4small2.png.webp"
+import MAMW4small3 from "../../assets/productPage/productSection/rs6/MAMW4small3.png.webp"
+import RS6_gallery1 from "../../assets/productPage/WhellGalery/RS6-gallery1-800x800.jpg.webp"
+import RS6_gallery2 from "../../assets/productPage/WhellGalery/RS6-gallery2-800x800.jpg.webp"
+import RS6_gallery3 from "../../assets/productPage/WhellGalery/RS6-gallery3-800x800.jpg.webp"
+import RS6_gallery4 from "../../assets/productPage/WhellGalery/RS6-gallery4-800x800.jpg.webp"
+
+import mamA1 from "../../assets/categoryPage/products/mamA1.png.webp"
+import mamA4 from "../../assets/categoryPage/products/mamA4.png.webp"
+import mamA5 from "../../assets/categoryPage/products/mamA5.png.webp"
+import mamB2 from "../../assets/categoryPage/products/MAMB2.png.webp"
+
+import  dataJson from "../../helpers/keskin_kt10_product_info.json"
+
+const data = dataJson
+console.log(data)
+
+// fullsize
+
+let fullsize = data.map((item)=> {
+     return item.fullsize
+  })
+
+let setFullsize = new Set (fullsize.sort())
+let resultFullsize =[]
+
+setFullsize.forEach((it)=> (it!=null && it !=undefined) && resultFullsize.push(it) )
+console.log(resultFullsize)
+
+resultFullsize.map((i)=> console.log(i))
+//  *********************
+// lzlk
+let lzlk = data.map((item)=> {
+     return item.lzlk
+  })
+
+let setLzlk = new Set (lzlk.sort())
+let resultLzlk =[]
+
+setLzlk.forEach((it)=> (it!=null && it !=undefined) && resultLzlk.push(it) )
+console.log(resultLzlk)
+
+resultLzlk.map((i)=> console.log(i))
+
+//  *********************
+
+let title = data.map((item)=> {
+     return item.title
+  })
+
+
+
+let resultTitleFirst =[]
+
+title.forEach((it)=> (it!=null && it !=undefined &&  !it.startsWith("Keskin")) && resultTitleFirst.push(it) )
+console.log(resultTitleFirst)
+let resultTitle = []
+resultTitleFirst.map((i)=> resultTitle.push(i.slice(11,30).trim()))
+let setResultTitle = new Set(resultTitle)
+let resultTitleLast = []
+setResultTitle.forEach((i)=> {
+    resultTitleLast.push(i)
+})
+console.log(resultTitleLast)
+
+//  *********************
+// price
+let price = data.map((item)=> {
+     return item.price
+  })
+
+let setPrice = new Set (price.sort(function(a, b){return a - b}))
+let resultPrice =[]
+
+setPrice.forEach((it)=> (it!=null && it !=undefined) && resultPrice.push(it) )
+console.log(resultPrice)
+console.log(resultPrice[0] , resultPrice[resultPrice.length -1])
+
+resultPrice.map((i)=> console.log(i))
+
+//  *********************
+// color
+let color = data.map((item)=> {
+     return item.color
+  })
+
+let setColor = new Set (color.sort())
+let resultColor =[]
+
+setColor.forEach((it)=> (it!=null && it !=undefined) && resultColor.push(it) )
+console.log(resultColor)
+
+resultColor.map((i)=> console.log(i))
+
+//  *********************
+// colorGroup
+let colorGroup = data.map((item)=> {
+     return item.colorGroup
+  })
+
+let setcolorGroup = new Set (colorGroup.sort())
+let resultcolorGroup =[]
+
+setcolorGroup.forEach((it)=> (it!=null && it !=undefined) && resultcolorGroup.push(it) )
+console.log(resultcolorGroup)
+
+resultcolorGroup.map((i)=> console.log(i))
+
+
+
+
+
+---
+
+<Layout title="MamFelgen Astro">
+    <section class="product-title">
+        <h2><a href="./index.html">Startseite-</a><a href="./category.html">Alufelgen-</a><span>{data[0].model}</span></h2>
+        <div>
+            <i class="bi bi-chevron-left"></i>
+            <i class="bi bi-grid"></i>
+            <i class="bi bi-chevron-right"></i>
+        </div>
+      </section>
+
+
+
+
+    <!-- *********************product-title finish ***************************** -->
+
+    <section class="product-section">
+        <div class="product-section-left">
+            <div class="product-section-big-img">
+                <img src={productBigFoto.src} alt="">
+            </div>
+            <div class="product-section-big-small">
+                <img src={MAMRS6_BFP.src} alt="">
+                <img src={MAMRS6_BP.src} alt="">
+                <img src={MAMRS6_PFP.src} alt="">
+
+            </div>
+        </div>
+        
+            <div class="product-section-right">
+            <h2 class="product-section-right-title">{data[0].model}</h2>
+            <form class="product-section-right-form" action="#">
+            <h4 class="product-section-right-form-title">Farbe:</h4>
+            <div class="product-section-right-form-img-wrapper">
+                <div class="product-section-right-form-img-container"  >
+                    <img src={MAMRS4small1.src} alt="">
+                </div>
+                <div class="product-section-right-form-img-container">
+                    <img src={MAMW4small2.src} alt="">
+                </div>
+                <div class="product-section-right-form-img-container">
+                    <img src={MAMW4small3.src}  alt="">
+                </div>
+            </div>
+            <h4 class="product-section-right-form-title">Zoll Größe:</h4>
+            <div class="zoll-gröbe-container">
+            
+                {resultFullsize.map((i) => 
+                <div class="zoll-gröbe">
+                <p>{i}</p> </div>)}
+            
+            </div>
+                
+            
+            <h4 class="product-section-right-form-title">Lochkreis:</h4>
+            <select name="" id="Lochkreis">
+                <option value="Wähle eine Option">Wähle eine Option</option>
+                {resultLzlk.map((i) => <option value={i}>{i}</option> )}
+                
+            </select>
+            <h4 class="product-section-right-form-title">Breite & ET:</h4>
+            <select name="" id="Breite">
+                <option value="Wähle eine Option">Wähle eine Option</option>
+                {resultTitleLast.map((i) => <option value={i}>{i}</option> )}
+               
+            </select>
+            <div class="price">
+                <h3>{resultPrice[0]}€ – {resultPrice[resultPrice.length -1]}€</h3>
+                <div class="price-counter">
+                    <span class="minus">-</span>
+                    <span class="price-counter-value">1</span>
+                    <span class="add">+</span>
+                </div>
+                <button class="submit-btn" type="submit">IN DEN WARENKORB</button>
+            </div>
+            </form>
+            <div class="product-section-right-auswertung">
+                <div>
+                    <a href=""><i class="bi bi-shuffle"></i>
+                        Compare</a>
+                    
+                </div>
+                <div>
+
+                    <a href=""><i class="bi bi-heart"></i>
+                        Add to wishlist</a>
+                    
+                </div>
+            </div>
+            <div class="social">
+                <span>Share:</span>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-envelope"></i></i></a>
+                <a href=""><i class="bi bi-pinterest"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-telegram"></i></a>
+                
+            </div>
+
+        </div>
+            
+        
+        
+    </section>
+
+    <!-- *********************product section finish ***************************** -->
+
+    <main>
+        <article class="table">
+            <div class="table-wrapper">
+            <div class="table-title">
+                <div class="table-title-first">Zusätzliche Informationen </div>
+                <div class="table-title-second title-over">Shipping & Delivery </div>
+                <div class="table-title-third title-over">Gutachten</div>
+            </div>
+            <div class="table-row" >
+                <h3>Farbe</h3>
+                <div class="table-row-farbe">{resultColor.map((i)=> <p>{i},</p> )}</div>
+                
+      
+            </div>
+            <div class="table-row">
+                <h3>Farbe group</h3>
+                <div >{resultcolorGroup.map((i)=> <p>{i},</p> )}</div>
+                
+            </div>
+            <div class="table-row">
+                <h3>Zoll Größe</h3>
+                <div>
+                    {resultFullsize.map((i) => <p>{i},</p> )}
+                </div>
+                
+                
+            </div>
+            <div class="table-row">
+                <h3>Lochkreis</h3>
+                <div>
+                    {resultLzlk.map((i) => <p>{i},</p> )}
+                </div>
+                
+            </div>
+            <div class="table-row">
+                <h3>Breite & ET</h3>
+                <div class="table-row-farbe">{resultTitleLast.map((i)=> <p>{i},</p> )}</div>
+            </div>
+        </div>
+        </article>
+
+        <article class="whell-galerie">
+            <h2>Wheel Galerie</h2>
+            <div class="whell-galerie-image-container"> 
+                <img src={RS6_gallery1.src} alt="">
+                <img src={RS6_gallery2.src} alt="">
+                <img src={RS6_gallery3.src} alt="">
+                <img src={RS6_gallery4.src} alt="">
+            </div>
+        </div>
+        </article>
+
+
+        <article class="product-video-section">
+            <video autoplay muted>
+                <source src={videoMAMRS6} >
+            </video>
+        </article>
+    </main>
+
+
+    <!-- *********************main finish ***************************** -->
+    <section class="same-product">
+        <h2>ÄHNLICHE PRODUKTE</h2>
+        <div class="same-product-cards">
+        <a href="./product.html">
+            <div class="category-card">
+                
+              <img src={mamA1.src} alt="" />
+              <h3>MAM A1</h3>
+              <h4>171.50€<span>-</span>205.00€</h4>
+            
+            </div>
+            </a>
+            <a href="./product.html">
+            <div class="category-card">
+              <img src={mamA4.src} alt="" />
+              <h3>MAM A4</h3>
+              <h4>92.93€ <span>-</span>190.54€</h4>
+            </div>
+        </a>
+            <a href="./product.html">
+            <div class="category-card">
+              <img src={mamA5.src} alt="" />
+              <h3>MAM A5</h3>
+              <h4>143.38€<span>-</span>211.43€</h4>
+            </div>
+        </a>
+            <a href="./product.html">
+            <div class="category-card">
+              <img src={mamB2.src} alt="" />
+              <h3>MAM B2</h3>
+              <h4>179.54€<span>-</span>286.93€</h4>
+            </div>
+        </a>
+    </div>
+    </section>
+    
+    
+     <!-- ************* same-product section finish ********************************-->
+</Layout>
+
+
+
+<style>
+    .product-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 123px;
+    background-color: #000000;
+    color:white;
+    padding: 0px 150px;
+}
+
+.product-title a{
+    text-decoration: none;
+    color:white;
+    font-size: .9rem;
+}
+
+.product-title h2 span{
+    color:#CBFC4E;
+    font-size: .9rem;
+}
+
+
+@media only screen and (max-width: 900px){
+    .product-title{
+        padding:0px 50px;
+    }
+}
+
+
+/* product-title finish */
+
+.product-section{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    margin-bottom:100px;
+    padding-top:20px;
+    
+}
+
+.product-section-left{
+
+width: 610px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.product-section-big-img{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.product-section-big-img img{
+    width:90%;
+    text-align: center;
+}
+
+.product-section-right{
+    width: 580px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px;
+    box-shadow: 0px 0px 4px #cfcdcd ;
+    border-radius: 20px;
+
+}
+.product-section-right-title{
+    font-size: 1.8rem;
+}
+
+.product-section-right-form-title{
+margin-top:15px;
+margin-bottom: 10px;
+}
+.product-section-right-form-img-wrapper{
+    display:flex;
+    
+  
+    
+
+}
+
+.product-section-right-form-img-container{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 4px #cfcdcd ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.product-section-right-form-img-container:hover{
+    border: 1px solid black;
+}
+
+.product-section-right-form-img-container img{
+    width: 30px;
+}
+
+.zoll-gröbe-container{
+    display: flex;
+    gap:5px;
+}
+
+.zoll-gröbe{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 4px #cfcdcd ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.zoll-gröbe:hover{
+    border: 1px solid black;
+}
+
+select{
+    padding: 10px 25px 10px 10px;
+    border-radius: 10px;
+    border:1px transparent;
+    box-shadow: 0px 0px 4px #cfcdcd ;
+    width: 200px ;
+    color:#545454
+}
+
+.price{
+    background-color: #000000;
+    color:#CBFC4E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:15px;
+    height: 90px;
+    width: 100%;
+
+}
+
+.price h3{
+    font-weight: 800;
+}
+
+.price-counter{
+    background-color: #CBFC4E;
+    padding: 2px;
+    color:black;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.minus, .add {
+    background-color: #000000;
+    color:#CBFC4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+}
+.minus{
+    border-radius:3px  0 0 3px  ; 
+}
+.add{
+    border-radius: 0 3px 3px 0 ;
+}
+
+.submit-btn{
+    background-color: #CBFC4E;
+    color:#000000;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.product-section-right-auswertung{
+    display: flex;
+    gap:50px;
+}
+
+.product-section-right-auswertung a{
+    text-decoration:none;
+    color:#000000
+}
+
+.product-section-right-auswertung a:hover{
+    color:#545454
+}
+
+.social{
+    display: flex;
+    gap:15px;
+    color:#545454
+}
+
+.social a{
+    color:#545454;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1245px){
+    .product-section{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 620px){
+    .product-section-big-img img{
+        width:70%;
+        text-align: center;
+    }
+
+    .product-section-big-small{
+        width:70%;
+    }
+
+    .product-section-big-small img{
+        width:20%;
+    }
+    .product-section-left{
+        align-items: center;
+        margin-left:90px;
+    }
+    .product-section-right{
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .price{
+        width: 100%;
+    }
+    .product-section-right{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 425px){}
+
+/* product section finish */
+
+
+main{
+    width: 100%;
+    border-top: 1px solid #787777;
+    border-bottom: 1px solid #787777;
+}
+
+.table{
+    width: 100%;
+}
+
+.table-wrapper{
+    width: 56%;
+   
+    margin: auto;
+}
+
+.table-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color:#787777;
+}
+
+.table-title-first{
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border-top:2px solid #CBFC4E
+}
+
+.table-title-second, .table-title-third{
+    padding: 10px;
+
+}
+
+.title-over:hover{
+    border-top:2px solid #CBFC4E;
+    color:#545454
+}
+
+.table-row{
+    padding: 15px 0px;
+    border-bottom:1px solid #787777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-row div {
+    
+    display: flex;
+    justify-content: end;
+    /* gap:2px; */
+    flex-wrap: wrap;
+    width: 70%;
+    line-height: .3rem;
+    
+   
+}
+
+.table-row div p{
+    margin-left: 2px;
+}
+
+.table-row h3{
+    color:#545454
+}
+
+.whell-galerie{
+    width: 100%;
+    
+    
+}
+
+.whell-galerie h2{
+    padding: 20px 10%
+}
+
+.whell-galerie-image-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.whell-galerie-image-container img{
+    width: 25%;
+    height: 290px;
+}
+
+.product-video-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.product-video-section video{
+    width: 80%;
+    border:none;
+    
+}
+
+
+@media only screen and (max-width: 1100px){
+    .table-wrapper{
+        font-size: .8rem;
+    }
+}
+@media only screen and (max-width: 970px){
+    .table-wrapper{
+        width: 80%;
+    }
+    .product-video-section{
+        width: 80%;
+        margin: auto;
+    }
+    .whell-galerie-image-container img{
+        height: 220px;
+    }
+}
+@media only screen and (max-width: 630px){
+    .table-wrapper{
+        font-size: .6rem;
+    }
+    .whell-galerie-image-container img{
+        height: 180px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .table-wrapper{
+        font-size: .5rem;
+    }
+    .whell-galerie-image-container img{
+        height: 120px;
+    }
+}
+
+/* main finish */
+
+.same-product{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.same-product h2{
+    padding: 20px 10%
+}
+
+.same-product-cards{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+.same-product-cards a{
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1280px){
+    .same-product-cards{
+        flex-wrap:wrap
+    }
+}
+@media only screen and (max-width: 720px){}
+@media only screen and (max-width: 560px){}
+@media only screen and (max-width: 425px){}
+
+/* same-product finish */
+</style>

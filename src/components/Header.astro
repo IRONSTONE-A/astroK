@@ -1,0 +1,659 @@
+---
+import headerLogo from "../assets/mainPage/header/header-left-logo.png"
+import langDE from "../assets/mainPage/header/de_flag.svg"
+import langENG from "../assets/mainPage/header/eng_flag.svg"
+import langFR from "../assets/mainPage/header/fr_flag.svg"
+import dropdownFoto from "../assets/mainPage/header/header-dropdown-img.webp"
+---
+<!-- header -->
+<header class="app-header">
+    <!-- header-left-side -->
+    <nav class="left-side">
+        <!-- logo -->
+        <div class="logo-wrapper">
+           <a href="./index.html"><img class="header-left-side-logo" src={headerLogo.src} alt="MamFelgenLogo"></a> 
+        </div>
+        
+        <!-- links -->
+        <ul class="header-left-side-links">
+            <!-- FELGEN -->
+            <li class="dropdown">
+                <a href=""><span class="header-felgen-span">FELGEN</span><i class="bi bi-chevron-down"></i></a>
+                <!-- dropdown-menu -->
+                <div class="dropdown-menu felgen-container" >
+                    <div>
+                        <ul class="felgen-dropdown-menu-list">
+                            
+                                    <li><a  href="#">MAM RS6</a></li>
+                                    <li><a  href="#">MAM B3</a></li>
+                                    <li><a  href="#">MAM B2</a></li>
+                                    <li><a  href="#">MAM A1</a></li>
+                                    <li><a  href="#">MAM RS5</a></li>
+                                    <li><a  href="#">MAM OX-18</a></li>
+                                    <li><a  href="#">MAM W4</a></li>
+                                    <li><a  href="#">MAM A4</a></li>
+                                    <li><a  href="#">MAM B4</a></li>
+                                    <li><a  href="#">MAM RS4</a></li>
+                                    <li><a  href="#">MAM GT1</a></li>
+                                    <li><a  href="#">MAM A5</a></li>
+                                    <li><a  href="#">MAM B3N</a></li>
+                                    <li><a  href="#">MAM B2N</a></li>
+                                    <li><a  href="#">MAM RS3</a></li>
+                            
+
+                        </ul>
+                        <div class="dropdown-menu-img">
+                            <img src={dropdownFoto.src} alt="dropdownMenuImage">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- ZOLL -->
+            <li class="dropdown ">
+                <a href=""><span class="header-zoll-span">ZOLL</span><i class="bi bi-chevron-down"></i></a>
+                <!-- dropdown-menu -->
+                <div class="dropdown-menu zoll-container">
+                    <div>
+                        <ul class="zoll-dropdown-menu-list">
+                            <div class="zoll-dropdown-menu-list-row">
+                                <li class="zoll-dropdown-menu-list-item"><a  href="#">16</a></li>
+                                <li class="zoll-dropdown-menu-list-item"><a  href="#">17</a></li>
+                                <li class="zoll-dropdown-menu-list-item"><a  href="#">18</a></li>
+                                <li class="zoll-dropdown-menu-list-item"><a  href="#">19</a></li>
+                                <li class="zoll-dropdown-menu-list-item"><a  href="#">20</a></li>
+                                <li class="zoll-dropdown-menu-list-item"><a  href="#">21</a></li>
+                                <li class="zoll-dropdown-menu-list-item"><a  href="#">22</a></li>
+                            </div>
+
+                        </ul>
+                        <div class="dropdown-menu-img">
+                            <img src={dropdownFoto.src} alt="dropdownMenuImage">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- UNTERNEHMEN-->
+            <li class="dropdown">
+                <a href=""><span class="header-unternehmen-span">UNTERNEHMEN</span><i class="bi bi-chevron-down"></i></a>
+                <!-- dropdown-menu -->
+                <div class="dropdown-menu unternehmen-container">
+                    <div>
+                        <ul class="unternehmen-dropdown-menu-list">
+                            <div class="unternehmen-dropdown-menu-list-row">
+                                <li class="unternehmen-dropdown-menu-list-item"><a  href="#">Über uns</a></li>
+                                <li class="unternehmen-dropdown-menu-list-item"><a  href="#">Blog</a></li>
+                                 <li class="unternehmen-dropdown-menu-list-item"><a  href="#">Kontakt</a></li>
+                            </div>
+
+                        </ul>
+                        <div class="dropdown-menu-img">
+                            <img src={dropdownFoto.src} alt="dropdownMenuImage">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- GUTACHTEN -->
+            <li class="dropdown ">
+                <a  href="#"><span class="header-gutachten">GUTACHTEN</span><i class="bi bi-chevron-down"></i></a>
+                    <!-- dropdown-menu -->
+                    <div class="dropdown-menu  gutachten-container">
+                        <ul class="gutachten-dropdown-menu-list" >
+                            <li class="gutachten-dropdown-menu-list-item"><a  href="#">Gutachten-Nach Artikel</a></li>
+                            <li class="gutachten-dropdown-menu-list-item"><a  href="#">Gutachten-Nach Autohersteller</a></li>
+                      
+                        </ul>
+                    </div>
+            </li>
+            <!-- ZUBEHÖR -->
+            <li class="dropdown">
+                <a class="text-decoration-none text-dark" href="#"><span class="header-zubehör">ZUBEHÖR</span></a>
+            </li>
+            
+        </ul>
+
+    </nav>
+    <!-- ****************************************************************** -->
+    <!-- header-right-side -->
+    <nav class="right-side">
+        <!-- links -->
+        <ul class="right-side-links" >
+            <!-- FELGENKONFIGURATOR -->
+            <li class="dropdown">
+              <a  href="#"
+                ><span class="header-felgenkonfigurator">FELGENKONFIGURATOR</span>
+              </a>
+            </li>
+            <!-- B2B HÄNDLER -->
+            <li class="dropdown">
+              <a  href="#"
+                ><span class="header-b2b-händler">B2B HÄNDLER </span>
+                <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu b2b-händler-container">
+                <ul class="b2b-händler-dropdown-menu-list  " >
+                        <li class="b2b-händler-dropdown-menu-list-item"><a  href="#">Händler Login</a></li>
+                        <li class="b2b-händler-dropdown-menu-list-item"><a  href="#">Registrierung Fachhändler</a></li>
+                        <li class="b2b-händler-dropdown-menu-list-item"><a  href="#">Händlersuche</a></li>
+                            
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- right-side-icons -->
+          <div class="right-side-icons">
+                <!-- search -->
+                <div class="search" >
+                    <i class="bi bi-search"></i>
+                </div>
+                <!-- chart -->
+                <div class="chart">
+                    <i class="bi bi-cart2"></i>
+                    <div class="chart-count"> <span>0</span></div>
+                </div>
+                <!-- profil account -->
+                <div class="profil">
+                    <i class="bi bi-person"></i>
+                </div>
+                <!-- languages -->
+                <div class="dropdown lang-dropdown">
+                    <div class="languages">
+                        <img src={langDE.src} alt="" class="align-middle" />
+                        <h6 class="langType">DE</h6>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-menu languages-container ">
+                        <ul class="languages-dropdown-menu-list" >
+                            <li class="languages-dropdown-menu-list-item"><a  href="#"><img src={langENG.src} alt="" class="align-middle" />   EN</a></li>
+                            <li class="languages-dropdown-menu-list-item"><a  href="#"><img src={langFR.src} alt="" class="align-middle" />    FR</a></li>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+          </div>
+          
+    </nav>
+    <div class="small-media-icons">
+        <!-- chart -->
+        <div class="small-media-icons-chart">
+            <i class="bi bi-cart2"></i>
+            <div class="small-media-icons-chart-count"> <span>0</span></div>
+            <div class="hamburger-container">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+        
+      </div>
+</header>
+
+<style >
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: Prompt, Arial, Helvetica, sans-serif;
+    }
+    
+    
+    
+    /* header */
+    
+    .app-header{
+        font-weight: 700;
+        font-size: 0.7rem;
+        height: 97px;
+        background-color: white;
+        color:#545454;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top:0;
+        left:0;
+        z-index: 2;
+    }
+    
+    /* logo */
+    
+    .logo-wrapper{
+        background-color: #CBFC4E;
+        width: 250px;
+        text-align: end;
+        padding: 15px;
+    }
+    
+    .header-left-side-logo{
+        width: 90px;
+    }
+    
+    /* dropdown */
+    
+    .dropdown{
+        transition: .3s all;
+        padding: 17px 0;
+        position:relative;
+        padding: 30px 10px;
+    }
+    
+    .dropdown a{
+        text-decoration: none;
+        /* font-size: 2rem; */
+    }
+    
+    .bi-chevron-down{
+        margin-left: 5px;
+        color:#545454
+    }
+    
+    .dropdown-menu{
+        width: 1000px;
+        /* border: 1px solid ; */
+        border-radius: 20px;
+        box-shadow: 0px 0px 4px #d4d0d0;
+        position:absolute;
+        top:65px;
+        display:none;
+        transition: .3s all;
+    }
+    
+    .dropdown-menu>div{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .dropdown-menu-img img{
+        border-radius: 0 20px 20px 0 ;
+        height: 100%;
+    }
+    
+    .dropdown a:nth-child(1) span {
+        color: #545454 ;
+        transition: .4s all;
+        font-size: .8rem;
+    
+    }
+    
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+    
+    .dropdown a:nth-child(1) span:hover {
+        color:#787777;
+        text-decoration: underline  3px;
+    }
+    
+    
+    
+    /* header-left-side */
+    
+    .left-side{
+        display: flex;
+    }
+    
+    /* header-left-side-links */
+    
+    .header-left-side-links{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+    
+    /* felgen */
+    
+    .felgen-container{
+        background-color: white;
+    }
+    
+    .felgen-dropdown-menu-list{
+        width: 600px;
+        padding: 15px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* justify-content: space-evenly; */
+        align-items: center;
+        
+    }
+    
+    .felgen-dropdown-menu-list li{
+        list-style-type: none;
+    }
+    
+    .felgen-dropdown-menu-list a{
+        padding: 10px;
+        color: #545454;
+        transition: .3s all;
+    }
+    
+    .felgen-dropdown-menu-list a:hover{
+        background-color: black;
+        color:#CBFC4E;
+        font-weight: 800;
+    }
+    
+    /* zoll */
+    
+    .zoll-container{
+        background-color: #0f0f0f; ;
+    }
+    
+    .zoll-dropdown-menu-list{
+        list-style-type: none;
+        
+        
+    }
+    
+    .zoll-dropdown-menu-list-row{
+        display: flex;
+        gap:20px 10px;
+        padding:15px;
+        justify-content: space-evenly;
+        width: 450px;
+        
+    }
+    
+    .zoll-dropdown-menu-list-row a{
+        color: grey;
+        padding: 10px 20px 10px 10px;
+    }
+    
+    .zoll-dropdown-menu-list-row a:hover{
+        background-color: black;
+        color:#CBFC4E;
+        font-weight: 800;
+    }
+    
+    /* UNTERNEHMEN */
+    
+    .unternehmen-container{
+        background-color: #0f0f0f; ;
+    }
+    
+    .unternehmen-dropdown-menu-list{
+        list-style-type: none;
+        
+        
+    }
+    
+    .unternehmen-dropdown-menu-list-row{
+        display: flex;
+        flex-direction: column;
+        gap:20px 10px;
+        padding:15px;
+        justify-content: space-evenly;
+        width: 450px;
+        
+    }
+    
+    .unternehmen-dropdown-menu-list-row a{
+        color: grey;
+        padding: 10px 20px 10px 10px;
+    }
+    
+    .unternehmen-dropdown-menu-list-row a:hover{
+        background-color: black;
+        color:#CBFC4E;
+        font-weight: 800;
+    }
+    
+    /* GUTACHTEN */
+    
+    .gutachten-container{
+        width: 280px;
+        height:150px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    .gutachten-dropdown-menu-list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+        padding: 10px 0px;
+        width: 100%;
+    }
+    
+    .gutachten-dropdown-menu-list li {
+        /* padding: 10px; */
+        width: 100%;
+    }
+    
+    .gutachten-dropdown-menu-list a{
+        color:#545454;
+        padding: 10px;
+    
+    }
+    
+    .gutachten-dropdown-menu-list li:hover a{
+        display: block;
+        background-color: black;
+        color:#CBFC4E;
+        font-weight: 800;
+        
+    }
+    
+    /* ZUBEHÖR */
+    
+    /* header-right-side */
+    
+    .right-side{
+        display: flex;
+    }
+    
+    .right-side-links{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+    
+    /* FELGENKONFIGURATOR */
+    
+    /* B2B HÄNDLER */
+    
+    .b2b-händler-container{
+        width: 280px;
+        height:150px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    .b2b-händler-dropdown-menu-list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+        padding: 10px 0px;
+        /* width: 100%; */
+    }
+    
+    
+    
+    .b2b-händler-dropdown-menu-list a{
+        color:#545454;
+        padding: 10px;
+    
+    }
+    
+    .b2b-händler-dropdown-menu-list li:hover a{
+        display: block;
+        background-color: black;
+        color:#CBFC4E;
+        font-weight: 800;
+        
+    }
+    
+    /* right-side-icons */
+    .right-side-icons{
+        display: flex;
+        gap:15px;
+    }
+    
+    /* search  */
+    
+    .search {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search i{
+        font-size: 1.1rem;
+    }
+    
+    /* chart */
+    
+    .chart{
+        display: flex;
+        align-items: center;
+        gap:5px;
+        
+    }
+    
+    .chart i{
+        font-size: 1.3rem;
+    }
+    
+    .chart-count{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #545454;
+    }
+    
+    .chart-count span{
+        color: white;
+    }
+    
+    /* profil */
+    
+    .profil{
+        display: flex;
+        align-items: center; 
+    }
+    
+    .profil i{
+        font-size: 1.5rem;
+    }
+    
+    /* languages */
+    
+    .languages{
+        display: flex;
+        align-items: center;
+        gap:5px;
+        
+    }
+    
+    .language img{
+        font-size: 1.3rem;
+    }
+    
+    .languages h6{
+        font-size: 14.4px;
+        color:#545454;
+    }
+    
+    .languages-container{
+        width: 100px;
+        height:150px;
+        border-radius: 10px;
+        position: absolute;
+        left:-35px;
+        background-color: white;
+    }
+    
+    .languages-dropdown-menu-list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        padding: 10px 0px;
+        /* width: 100%; */
+    }
+    
+    
+    
+    .languages-dropdown-menu-list a{
+        color:#545454;
+        padding: 10px;
+    
+    }
+    
+    .languages-dropdown-menu-list li:hover a{
+        display: block;
+        background-color: black;
+        color:#CBFC4E;
+        font-weight: 800;
+        
+    }
+    
+    .small-media-icons{
+        /* display: flex ; */
+        align-items: center;
+        gap:5px;
+        width: 100px;
+    
+    }
+    
+    .small-media-icons-chart{
+        display: flex;
+        align-items: center;
+        gap:5px;
+    }
+    
+    
+    
+    .small-media-icons i{
+        font-size: 1.5rem;
+    }
+    
+    .small-media-icons-chart-count{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #545454;
+    }
+    
+    .small-media-icons-chart-count span{
+        color: white;
+    }
+    
+    .small-media-icons{
+        display:none !important;
+    }
+    
+    
+    /* @media only screen and (max-width: 1245px){ */
+    @media only screen and (max-width: 1100px){
+    
+        .logo-wrapper{
+            background-color:#CBFC4E;
+            width: 150px;
+            text-align: center;
+            padding: 15px;
+        } 
+        .small-media-icons{
+            display:block !important;
+        } 
+        
+        .header-left-side-links, .right-side{
+            display:none;
+        }
+    }
+    
+    
+    /* ***** header finish *********** */
+        
+        
+    </style>
