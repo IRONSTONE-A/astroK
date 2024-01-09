@@ -27,6 +27,9 @@ import  dataJson from "../../helpers/keskin_kt10_product_info.json"
 const data = dataJson
 console.log(data)
 
+
+
+
 // fullsize
 
 let fullsize = data.map((item)=> {
@@ -119,10 +122,37 @@ console.log(resultcolorGroup)
 resultcolorGroup.map((i)=> console.log(i))
 
 
-
+let quantity = 1
 
 
 ---
+
+<script>
+//farbe
+let smallPhotoContainer = document.querySelector(".product-section-right-form-img-wrapper")
+smallPhotoContainer.addEventListener("click", (e)=> {
+console.log(e.target)
+})
+
+//price container 
+
+
+const priceCounterDiv = document.querySelector(".price-counter")
+
+priceCounterDiv.addEventListener("click", (e) => {
+if(e.target.classList.contains("minus")){
+    if (e.target.nextElementSibling.innerText > 1) {
+      
+      e.target.nextElementSibling.innerText--; }
+}
+else if (e.target.classList.contains ('plus')) {
+    
+    e.target.previousElementSibling.innerText++;}
+})
+
+
+
+</script>
 
 <Layout title="MamFelgen Astro">
     <section class="product-title">
@@ -155,7 +185,9 @@ resultcolorGroup.map((i)=> console.log(i))
             <div class="product-section-right">
             <h2 class="product-section-right-title">{data[0].model}</h2>
             <form class="product-section-right-form" action="#">
-            <h4 class="product-section-right-form-title">Farbe:</h4>
+            <h4 class="product-section-right-form-title">Farbe:<span class="farbe-span"></span>
+
+            </h4>
             <div class="product-section-right-form-img-wrapper">
                 <div class="product-section-right-form-img-container"  >
                     <img src={MAMRS4small1.src} alt="">
@@ -167,7 +199,7 @@ resultcolorGroup.map((i)=> console.log(i))
                     <img src={MAMW4small3.src}  alt="">
                 </div>
             </div>
-            <h4 class="product-section-right-form-title">Zoll Größe:</h4>
+            <h4 class="product-section-right-form-title">Zoll Größe:<span class="zoll-gröbe-span"></span></h4>
             <div class="zoll-gröbe-container">
             
                 {resultFullsize.map((i) => 
@@ -192,9 +224,9 @@ resultcolorGroup.map((i)=> console.log(i))
             <div class="price">
                 <h3>{resultPrice[0]}€ – {resultPrice[resultPrice.length -1]}€</h3>
                 <div class="price-counter">
-                    <span class="minus">-</span>
-                    <span class="price-counter-value">1</span>
-                    <span class="add">+</span>
+                    <span class="minus" >-</span>
+                    <span class="quantity">{quantity}</span>
+                    <span class="plus"  >+</span>
                 </div>
                 <button class="submit-btn" type="submit">IN DEN WARENKORB</button>
             </div>
@@ -497,7 +529,7 @@ select{
     
 }
 
-.minus, .add {
+.minus, .plus {
     background-color: #000000;
     color:#CBFC4E;
     display: flex;
@@ -508,7 +540,7 @@ select{
 .minus{
     border-radius:3px  0 0 3px  ; 
 }
-.add{
+.plus{
     border-radius: 0 3px 3px 0 ;
 }
 

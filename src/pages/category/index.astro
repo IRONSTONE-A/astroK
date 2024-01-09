@@ -25,6 +25,20 @@ import  dataJson from "../../helpers/keskin_kt10_product_info.json"
 
 const data = dataJson
 console.log(data)
+
+// price
+let price = data.map((item)=> {
+     return item.price
+  })
+
+let setPrice = new Set (price.sort(function(a, b){return a - b}))
+let resultPrice =[]
+
+setPrice.forEach((it)=> (it!=null && it !=undefined) && resultPrice.push(it) )
+console.log(resultPrice)
+console.log(resultPrice[0] , resultPrice[resultPrice.length -1])
+
+resultPrice.map((i)=> console.log(i))
 ---
 
 
@@ -64,8 +78,8 @@ console.log(data)
               <div class="category-card">
               
                 <img src={mamA1.src} alt="" />
-                <h3>KT10</h3>
-                <h4>171.50€<span>-</span>205.00€</h4>
+                <h3>{data[0].model}</h3>
+                <h4>{resultPrice[0]}€ – {resultPrice[resultPrice.length -1]}€</h4>
           
                 </div>
                 </a>
